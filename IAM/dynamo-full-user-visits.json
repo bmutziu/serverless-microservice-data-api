@@ -22,8 +22,8 @@
                 "dynamodb:UpdateTable"
             ],
             "Resource": [
-                "arn:aws:dynamodb:eu-west-1:000000000000:table/user-visits",
-				"arn:aws:dynamodb:eu-west-1:000000000000:table/user-visits-sam"  				
+                "arn:aws:dynamodb:eu-west-2:947342103870:table/user-visits",
+				"arn:aws:dynamodb:eu-west-2:947342103870:table/user-visits-sam"  				
             ]
         },
         {

@@ -13,8 +13,8 @@ Resources:
       Description: >-
         This Lambda is invoked by API Gateway and queries DynamoDB.
       MemorySize: 128
-      Timeout: 3  
-      Role: 'arn:aws:iam::000000000000:role/lambda-dynamo-data-api'
+      Timeout: 3
+      Role: 'arn:aws:iam::947342103870:role/lambda-dynamo-data-api'
       Environment:
         Variables:
           environment: dev
@@ -26,20 +26,20 @@ Resources:
             Method: GET
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
-    Properties: 
+    Properties:
       TableName: user-visits-sam
-      SSESpecification: 
+      SSESpecification:
         SSEEnabled: True
-      AttributeDefinitions: 
+      AttributeDefinitions:
         - AttributeName: EventId
           AttributeType: S
         - AttributeName: EventDay
           AttributeType: N
-      KeySchema: 
+      KeySchema:
         - AttributeName: EventId
           KeyType: HASH
         - AttributeName: EventDay
           KeyType: RANGE
-      ProvisionedThroughput: 
+      ProvisionedThroughput:
         ReadCapacityUnits: 1
         WriteCapacityUnits: 1

@@ -22,7 +22,7 @@ import csv
 
 
 class DynamoRepository:
-    def __init__(self, target_dynamo_table, region='eu-west-1'):
+    def __init__(self, target_dynamo_table, region='eu-west-2'):
         self.dynamodb = resource(service_name='dynamodb', region_name=region)
         self.target_dynamo_table = target_dynamo_table
         self.table = self.dynamodb.Table(self.target_dynamo_table)

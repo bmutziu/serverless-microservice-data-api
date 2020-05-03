@@ -1,7 +1,7 @@
 #!/bin/sh
-export profile="demo"
-export region="eu-west-1"
-export aws_account_id="000000000000"
+export profile="default"
+export region="eu-west-2"
+export aws_account_id="947342103870"
 export template="lambda-dynamo-data-api"
-export bucket="testbucket121f"
+export bucket="bmbckt000"
 export prefix="tmp/sam"

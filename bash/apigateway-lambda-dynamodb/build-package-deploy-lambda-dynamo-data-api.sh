@@ -8,7 +8,7 @@
 #Create the roles needed by API Gateway and Lambda
 ./create-role.sh
 
-#Create Zip file of your Lambda code (works on Windows and Linux) 
+#Create Zip file of your Lambda code (works on Windows and Linux)
 ./create-lambda-package.sh
 
 #Package your Serverless Stack using SAM + Cloudformation
